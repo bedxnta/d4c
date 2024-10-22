@@ -1,9 +1,8 @@
 import discord
-
-# debug_guilds must not be set if we want to set contexts and integration_types on commands
-import discord
 import os
 from commands import calc, avatar, rng, rcg, standinfo, define
+
+bot_token = os.environ['TOKEN']
 
 # Create a bot instance
 bot = discord.Bot()
@@ -17,4 +16,5 @@ standinfo.setup(bot)
 # shorten.setup(bot)
 define.setup(bot)
 
-bot.run("ENTER TOKEN")
+print("Bot is running...")
+bot.run(bot_token)

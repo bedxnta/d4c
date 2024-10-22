@@ -12,7 +12,7 @@ def setup(bot):
     async def rcg(ctx: discord.ApplicationContext):
         # Generate random hex color
         color_code = "#{:06x}".format(random.randint(0, 0xFFFFFF))
-        
+
         # Convert hex to RGB values
         r = int(color_code[1:3], 16)
         g = int(color_code[3:5], 16)
@@ -33,4 +33,5 @@ def setup(bot):
         color_image_url = f"https://singlecolorimage.com/get/{color_code[1:]}/200x200"
         embed.set_thumbnail(url=color_image_url)  # Display the color image on the side
 
+        embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
         await ctx.respond(embed=embed)

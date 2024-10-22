@@ -48,6 +48,7 @@ def setup(bot):
                 description=f"**Expression**: `{expression}`\n**Result**: `{result}`",
                 color=discord.Color.green()
             )
+            embed.set_footer(text="Byte Crusader | Made by Cosmo (@bedxnta)")
             await ctx.respond(embed=embed)
         except ValueError as e:
             # If an unrecognized constant or function is used
@@ -56,6 +57,7 @@ def setup(bot):
                 description=f"{str(e)}",  # Display the list of available constants/functions in the error
                 color=discord.Color.red()
             )
+            error_embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
             await ctx.respond(embed=error_embed)
         except Exception as e:
             # For any other generic errors (syntax, etc.)
@@ -64,4 +66,5 @@ def setup(bot):
                 description=f"Invalid expression: {e}",
                 color=discord.Color.red()
             )
+            error_embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
             await ctx.respond(embed=error_embed)

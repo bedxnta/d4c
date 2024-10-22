@@ -59,6 +59,9 @@ def setup(bot):
                     if image_url and isinstance(image_url, str) and image_url.startswith('http'):
                         embed.set_image(url=image_url)
 
+                    # Add footer
+                    embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
+
                     await ctx.respond(embed=embed)
                 else:
                     await ctx.respond("Sorry, I couldn't find any stands matching that query.")
@@ -94,6 +97,9 @@ def setup(bot):
 
                     if image_url and isinstance(image_url, str) and image_url.startswith('http'):
                         embed.set_image(url=image_url)
+
+                    # Add footer
+                    embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
 
                     await ctx.respond(embed=embed)
                 else:
