@@ -19,5 +19,5 @@ def setup(bot):
                 description=f"Your random number between {min} and {max} is **{number}**",
                 color=discord.Color.blue()
             )
-            embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
+            embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
             await ctx.respond(embed=embed)
