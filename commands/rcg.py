@@ -33,5 +33,5 @@ def setup(bot):
         color_image_url = f"https://singlecolorimage.com/get/{color_code[1:]}/200x200"
         embed.set_thumbnail(url=color_image_url)  # Display the color image on the side
 
-        embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
+        embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
         await ctx.respond(embed=embed)
