@@ -66,5 +66,5 @@ def setup(bot):
                 description=f"Invalid expression: {e}",
                 color=discord.Color.red()
             )
-            error_embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
+            error_embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
             await ctx.respond(embed=error_embed)
