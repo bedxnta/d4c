@@ -14,6 +14,6 @@ def setup(bot):
             color=discord.Color.blue()
         )
         embed.set_image(url=user.avatar.url)  # Adds the avatar as an image in the embed
-        embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
+        embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
         await ctx.respond(embed=embed)
         
