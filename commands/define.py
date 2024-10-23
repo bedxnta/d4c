@@ -28,7 +28,7 @@ def setup(bot):
                         description=f"**Definition**: {definition}\n**Example**: {example}",
                         color=discord.Color.blue()
                     )
-                    embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
+                    embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
                     await ctx.respond(embed=embed)
                 else:
                     await ctx.respond(f"Could not find the word {word} in the dictionary.")
@@ -47,7 +47,7 @@ def setup(bot):
                         description=f"**Definition**: {definition}\n**Example**: {example}",
                         color=discord.Color.orange()
                     )
-                    embed.set_footer(text="Byte Crusader 〣 Made by Cosmo (@bedxnta)")
+                    embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
                     await ctx.respond(embed=embed)
                 else:
                     await ctx.respond(f"Could not find the word {word} in Urban Dictionary.")
