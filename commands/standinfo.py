@@ -60,7 +60,7 @@ def setup(bot):
                         embed.set_image(url=image_url)
 
                     # Add footer
-                    embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
+                    embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
 
                     await ctx.respond(embed=embed)
                 else:
@@ -99,7 +99,7 @@ def setup(bot):
                         embed.set_image(url=image_url)
 
                     # Add footer
-                    embed.set_footer(text="FA3RP 〣 Made by Cosmo (@bedxnta)")
+                    embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
 
                     await ctx.respond(embed=embed)
                 else:
