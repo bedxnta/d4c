@@ -25,7 +25,7 @@ def safe_eval(expression):
     for name in code.co_names:
         if name not in allowed_names:
             raise ValueError(
-                f"Use of '{name}' is not allowed. Available constants and functions: "
+                f":x: Use of '{name}' is not allowed. Available constants and functions: "
                 f"{', '.join(allowed_names.keys())}"
             )
 
@@ -44,8 +44,8 @@ def setup(bot):
             # Evaluate the expression using the safe_eval function
             result = safe_eval(expression)
             embed = discord.Embed(
-                title="Calculator",
-                description=f"**Expression**: `{expression}`\n**Result**: `{result}`",
+                title=":abacus: Calculator",
+                description=f"**:arrow_right: Expression**: `{expression}`\n:arrow_right: **Result**: `{result}`",
                 color=discord.Color.green()
             )
             embed.set_footer(text="D4C | Made by Cosmo (@bedxnta)")
@@ -62,7 +62,7 @@ def setup(bot):
         except Exception as e:
             # For any other generic errors (syntax, etc.)
             error_embed = discord.Embed(
-                title="Error",
+                title=":x: Error",
                 description=f"Invalid expression: {e}",
                 color=discord.Color.red()
             )

@@ -20,7 +20,7 @@ def setup(bot):
 
         # Create the embed with color details
         embed = discord.Embed(
-            title="Random Color Generator",
+            title=":art: Random Color Generator",
             description=f"**Generated Color**: `{color_code}`",
             color=int(color_code[1:], 16)  # Set the embed color to the generated color
         )

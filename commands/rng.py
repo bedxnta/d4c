@@ -11,11 +11,11 @@ def setup(bot):
     )
     async def rng(ctx: discord.ApplicationContext, min: int, max: int):
         if min > max:
-            await ctx.respond("Error: Min cannot be greater than Max.")
+            await ctx.respond(":x: Error: Min cannot be greater than Max.")
         else:
             number = random.randint(min, max)
             embed = discord.Embed(
-                title="Random Number Generator",
+                title=":1234: Random Number Generator",
                 description=f"Your random number between {min} and {max} is **{number}**",
                 color=discord.Color.blue()
             )

@@ -10,7 +10,7 @@ def setup(bot):
     )
     async def avatar(ctx: discord.ApplicationContext, user: discord.User):
         embed = discord.Embed(
-            title=f"{user.display_name}'s Avatar",
+            title=f":frame_photo: {user.display_name}'s Avatar",
             color=discord.Color.blue()
         )
         embed.set_image(url=user.avatar.url)  # Adds the avatar as an image in the embed

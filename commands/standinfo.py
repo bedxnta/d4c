@@ -48,7 +48,7 @@ def setup(bot):
 
                     # Create embed for stand information
                     embed = discord.Embed(
-                        title=stand_name,
+                        title=f":mag: {stand_name}",
                         description=f"**Stand User**: {user_name}\n"
                                     f"**JP Name**: {japanese_name}\n"
                                     f"**Abilities**: {abilities}\n"
@@ -64,7 +64,7 @@ def setup(bot):
 
                     await ctx.respond(embed=embed)
                 else:
-                    await ctx.respond("Sorry, I couldn't find any stands matching that query.")
+                    await ctx.respond(":x: Sorry, I couldn't find any stands matching that query.")
             elif search_type == "user":
                 # Query User information
                 user_api_url = f"https://stand-by-me.herokuapp.com/api/v1/characters/query/query?name={query}"
@@ -87,7 +87,7 @@ def setup(bot):
 
                     # Create embed for user information
                     embed = discord.Embed(
-                        title=user_name,
+                        title=f":mag: {user_name}",
                         description=f"**JP Name**: {jpname}\n"
                                     f"**Family**: {family}\n"
                                     f"**Nationality**: {nationality}\n"
@@ -103,6 +103,6 @@ def setup(bot):
 
                     await ctx.respond(embed=embed)
                 else:
-                    await ctx.respond("Sorry, I couldn't find any users matching that query.")
+                    await ctx.respond(":x: Sorry, I couldn't find any users matching that query.")
         except Exception as e:
-            await ctx.respond(f"An error occurred: {str(e)}")
+            await ctx.respond(f":x: An error occurred: {str(e)}")

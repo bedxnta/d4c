@@ -24,14 +24,14 @@ def setup(bot):
                     example = data['meanings'][0]['definitions'][0].get('example', 'No example available.')
 
                     embed = discord.Embed(
-                        title=f"Definition of {word}",
+                        title=f":pen_ballpoint: Definition of {word}",
                         description=f"**Definition**: {definition}\n**Example**: {example}",
                         color=discord.Color.blue()
                     )
                     embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
                     await ctx.respond(embed=embed)
                 else:
-                    await ctx.respond(f"Could not find the word {word} in the dictionary.")
+                    await ctx.respond(f":x: Could not find the word {word} in the dictionary.")
 
             elif query_type == "urbandictionary":
                 api_url = f"http://api.urbandictionary.com/v0/define?term={word}"
@@ -43,14 +43,14 @@ def setup(bot):
                     example = data.get('example', 'No example available.')
 
                     embed = discord.Embed(
-                        title=f"Urban Definition of {word}",
+                        title=f":pen_ballpoint: Urban Definition of {word}",
                         description=f"**Definition**: {definition}\n**Example**: {example}",
                         color=discord.Color.orange()
                     )
                     embed.set_footer(text="D4C 〣 Made by Cosmo (@bedxnta)")
                     await ctx.respond(embed=embed)
                 else:
-                    await ctx.respond(f"Could not find the word {word} in Urban Dictionary.")
+                    await ctx.respond(f":x: Could not find the word {word} in Urban Dictionary.")
 
         except Exception as e:
-            await ctx.respond(f"An error occurred: {str(e)}")
+            await ctx.respond(f":x: An error occurred: {str(e)}")
