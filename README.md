@@ -27,7 +27,7 @@ No token pasting or sketchy logins. Just clean, user-consented interaction.
    
 2. Install dependencies:  
    ```
-   pip install -r requirements.txt
+   pip install discord.py requests py-cord
    ```
    
 3. Set up your app credentials (OAuth client ID/secret) in the config.
